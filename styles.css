@@ -7,7 +7,7 @@
 
 /* Style the body */
 body {
-  background-color: #143f6b;
+  background-color: #40a567;
   margin: 0;
   min-height: 100vh;
   display: flex;
@@ -38,4 +38,12 @@ body {
   margin-left: calc(var(--width) /-2);
   margin-right: calc(var(--width) /-2);
   z-index: 2;
+}
+
+.white.active {
+  background-color: #ccc;
+}
+
+.black.active {
+  background-color: #333;
 }
