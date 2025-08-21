@@ -51,19 +51,20 @@ document.addEventListener('keydown', (e) => {
     if (blackKeyIndex > -1) {
         playNote(blackKeys[blackKeyIndex]);
     }
+    //Ode of joy trigger//
+    if (key === 'z') {
+        playOdeToJoy();
+    }
+
 });
 
 
 
 // Play ode to joy //
 
-//Ode of joy trigger//
-if (key === 'z') {
-    playOdeToJoy();
-}
 // handelers 
 
-function PlayOdeToJoy() {
+function playOdeToJoy() {
     let delay = 0;
     OdeToJoy.forEach(({ note, duration }) => {
         setTimeout(() => {
